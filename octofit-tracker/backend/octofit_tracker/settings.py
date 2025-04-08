@@ -25,7 +25,9 @@ SECRET_KEY = "django-insecure-mkwrj4&fifpoauid8r74b(mj&hs7ztmpqw9cmdspx69wb%kiw*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+CODESPACE_NAME = 'automatic-yodel-5g7rwx4g67924pvx'
+
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', f'{CODESPACE_NAME}-8000.app.github.dev']
 
 
 # Application definition

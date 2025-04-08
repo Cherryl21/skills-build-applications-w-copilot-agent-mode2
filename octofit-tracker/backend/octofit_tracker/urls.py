@@ -18,7 +18,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import UserViewSet, TeamViewSet, ActivityViewSet, LeaderboardViewSet, WorkoutViewSet
+from .views import UserViewSet, TeamViewSet, ActivityViewSet, LeaderboardViewSet, WorkoutViewSet, codespace_url
 
 router = DefaultRouter()
 router.register(r'users', UserViewSet)
@@ -30,4 +30,5 @@ router.register(r'workouts', WorkoutViewSet)
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('', include(router.urls)),
+    path('codespace_url/', codespace_url, name='codespace_url'),
 ]
