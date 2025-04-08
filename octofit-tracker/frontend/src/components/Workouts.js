@@ -4,7 +4,7 @@ function Workouts() {
   const [workouts, setWorkouts] = useState([]);
 
   useEffect(() => {
-    fetch('https://automatic-yodel-5g7rwx4g67924pvx-8000.app.github.dev/api/workouts')
+    fetch('https://automatic-yodel-5g7rwx4g67924pvx-8000.app.github.dev/api/workouts/')
       .then(response => response.json())
       .then(data => setWorkouts(data));
   }, []);

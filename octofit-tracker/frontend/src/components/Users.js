@@ -4,7 +4,7 @@ function Users() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('https://automatic-yodel-5g7rwx4g67924pvx-8000.app.github.dev/api/users')
+    fetch('https://automatic-yodel-5g7rwx4g67924pvx-8000.app.github.dev/api/users/')
       .then(response => response.json())
       .then(data => setUsers(data));
   }, []);

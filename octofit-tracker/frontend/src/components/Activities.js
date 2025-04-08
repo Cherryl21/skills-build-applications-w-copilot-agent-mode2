@@ -4,7 +4,7 @@ function Activities() {
   const [activities, setActivities] = useState([]);
 
   useEffect(() => {
-    fetch('https://automatic-yodel-5g7rwx4g67924pvx-8000.app.github.dev/api/activities')
+    fetch('https://automatic-yodel-5g7rwx4g67924pvx-8000.app.github.dev/api/activities/')
       .then(response => response.json())
       .then(data => setActivities(data));
   }, []);
